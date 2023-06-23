@@ -53,12 +53,12 @@
 // -----------------------------------------------------------------------------------------
 // |   | BT1  | BT2 | BT3 | BT4 |  BT5  |  |    |  F7  |  F8  | F9 | F10 | PL/P |
 // |   | BRUP | VUP |     |     | BTCLR |  |    |  F4  |  F5  | F6 | F11 | PREV |
-// |   | BRDN | VDN | MUT |     | RESET |  |    |  F1  |  F2  | F3 | F12 | NEXT |
+// |   | BRDN | VDN | MUT |     |       |  |    |  F1  |  F2  | F3 | F12 | NEXT |
 //                  | tr  | tr  |  tr   |  | tr |  SPC | to 0 |
             bindings = <
 &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none &kp F7 &kp F8 &kp F9 &kp F10 &kp C_PP
 &none  &kp C_BRI_UP &kp C_VOL_UP &none        &none        &bt BT_CLR     &none &kp F4 &kp F5 &kp F6 &kp F11 &kp C_PREV
-&none  &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &none        &reset         &none &kp F1 &kp F2 &kp F3 &kp F12 &kp C_NEXT
+&none  &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &none        &none         &none &kp F1 &kp F2 &kp F3 &kp F12 &kp C_NEXT
                                 &trans &trans &trans   &trans &kp SPACE &to 0
             >;
         };
